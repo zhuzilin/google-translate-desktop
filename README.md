@@ -4,7 +4,13 @@ Google Translate Desktop built with Electron
     <img src="https://raw.githubusercontent.com/zhuzilin/google-translate-desktop/master/img/google-translate.jpg" width="80%">
 </p>
 
-## build from source
+## Installation
+
+Please download the [release](https://github.com/zhuzilin/google-translate-desktop/releases)
+
+Only support win32 right now.
+
+## Build from source
 ``` [shell]
 yarn build
 ```
