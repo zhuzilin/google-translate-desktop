@@ -8,7 +8,7 @@ Google Translate Desktop built with Electron
 
 Please download the [release](https://github.com/zhuzilin/google-translate-desktop/releases)
 
-Only support win32 right now.
+Only support win32 and linux right now.
 
 ## Build from source
 ``` [shell]
