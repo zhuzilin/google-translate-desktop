@@ -8,9 +8,12 @@ Google Translate Desktop built with Electron
 
 Please download the [release](https://github.com/zhuzilin/google-translate-desktop/releases)
 
-Only support win32 and linux right now.
+For linux user, please build from source. Will support mac in the future.
 
 ## Build from source
+
 ``` [shell]
-yarn build
+git clone https://github.com/zhuzilin/google-translate-desktop
+cd google-translate-desktop-master
+yarn && yarn build
 ```
