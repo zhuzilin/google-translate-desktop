@@ -1,7 +1,7 @@
 {
-  "name": "google-translation-desktop",
+  "name": "google-translate-desktop",
   "version": "1.0.0",
-  "description": "a desktop version of google translation using electron",
+  "description": "a desktop version of google translate using electron",
   "main": "src/main.js",
   "author": "zhuzilin",
   "license": "MIT",
