@@ -6,12 +6,12 @@ Google Translate Desktop built with Electron
 
 ## Installation
 
-Please download the [release](https://github.com/zhuzilin/google-translate-desktop/releases).
+Please download the latest [release](https://github.com/zhuzilin/google-translate-desktop/releases).
 
 For linux user, before installation please run:
 
 ```[shell]
-chmod +x google-translation-desktop-1.0.0-x86_64.AppImage
+chmod +x google-translation-desktop-x.x.x-x86_64.AppImage
 ```
 It is the [requirement](https://github.com/electron-userland/electron-builder/issues/1353) from the author of AppImage.
 
