@@ -1,13 +1,11 @@
 {
   "name": "google-translate-desktop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a desktop version of google translate using electron",
   "main": "src/main.js",
   "author": "zhuzilin",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.18.0"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "electron .",
     "build": "electron-builder ."

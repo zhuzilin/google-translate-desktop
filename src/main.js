@@ -1,4 +1,5 @@
-const { app, Menu, BrowserWindow } = require('electron');
+const { app, Menu, BrowserWindow, MenuItem } = require('electron');
+let menu = require('./menu').menu;
 
 let mainWindow;
 
@@ -12,14 +13,13 @@ function createWindow() {
             nodeIntegration: false
         }
     });
+    // mainWindow.webContents.openDevTools();
     mainWindow.loadURL('https://translate.google.com/');
     mainWindow.webContents.on('dom-ready', () => {mainWindow.webContents.executeJavaScript(`
         document.getElementById('gt-ft-res').style.display = 'none';
-        document.getElementById('gt-pb-sw1').style.display = 'none';
-        document.getElementById('select_document').style.display = 'none';
-        document.getElementsByClassName('gb_Dc gb_Rg gb_R')[0].style.display = 'none';
     `);}
     );
+
     mainWindow.on('closed', () => {
         mainWindow = null;
     });
@@ -27,26 +27,7 @@ function createWindow() {
 
 app.on('ready', () => {
     createWindow();
-    // Check if we are on a MAC
-  if (process.platform === 'darwin') {
-    // Create our menu entries so that we can use MAC shortcuts
-    Menu.setApplicationMenu(Menu.buildFromTemplate([
-      {
-        label: 'Edit',
-        submenu: [
-          { role: 'undo' },
-          { role: 'redo' },
-          { type: 'separator' },
-          { role: 'cut' },
-          { role: 'copy' },
-          { role: 'paste' },
-          { role: 'pasteandmatchstyle' },
-          { role: 'delete' },
-          { role: 'selectall' }
-        ]
-      }
-    ]));
-  }
+    Menu.setApplicationMenu(menu);
 });
 
 app.on('window-all-closed', () => {
